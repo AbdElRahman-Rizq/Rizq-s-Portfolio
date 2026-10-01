@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abd El-Rahman Rizq | Full Stack Engineer</title>
+<meta name="description" content="Full Stack Engineer building ERP, HR and booking platforms with React, Next.js and NestJS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F7F6; --ink:#12202B; --mute:#5A6A75; --rule:#C3D4CE; --band:#E6EFEC; --accent:#1F4FE0; --accent-ink:#fff;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0F1A21; --ink:#E7EFEC; --mute:#98A9B1; --rule:#27404A; --band:#15252E; --accent:#7EA2FF; --accent-ink:#0F1A21;}}
+:root[data-theme="dark"]{--paper:#0F1A21; --ink:#E7EFEC; --mute:#98A9B1; --rule:#27404A; --band:#15252E; --accent:#7EA2FF; --accent-ink:#0F1A21;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;gap:20px;flex-wrap:wrap;padding:20px 0;font-size:15px;border-bottom:1px solid var(--rule)}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink);text-decoration:underline}
+nav .me{color:var(--ink);font-weight:700;margin-right:auto}
+.hero{padding:72px 0 64px}
+h1{font-size:clamp(2.8rem,9vw,6.4rem);line-height:.95;letter-spacing:-.035em;font-weight:800;margin:0 0 28px}
+h1 span{display:block}
+.lead{max-width:34em;font-size:clamp(1.15rem,2.4vw,1.4rem);line-height:1.5;margin:0 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 20px;border:1.5px solid var(--ink);text-decoration:none;font-weight:700;font-size:15px;background:none;color:var(--ink);cursor:pointer;font-family:inherit;border-radius:4px}
+.btn.main{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.facts{display:flex;gap:40px;flex-wrap:wrap;margin-top:48px;padding-top:20px;border-top:1px solid var(--rule);color:var(--mute);font-size:15px}
+.facts b{color:var(--ink);font-weight:700}
+section{padding:56px 0;border-top:1px solid var(--rule)}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);letter-spacing:-.02em;margin:0 0 28px;font-weight:800}
+/* ledger rows */
+.row{display:grid;grid-template-columns:190px 1fr;gap:8px 32px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.row:first-of-type{border-top:2px solid var(--ink)}
+.when{font-variant-numeric:tabular-nums;color:var(--mute);font-size:15px}
+.row h3{margin:0;font-size:1.15rem;font-weight:700}
+.row .role{margin:0 0 8px;color:var(--mute);font-size:15px}
+.row ul{margin:0;padding-left:1.1em}
+.row li{margin:0 0 4px;max-width:46em}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.tags span{background:var(--band);padding:2px 10px;font-size:14px;border-radius:3px}
+dl{margin:0;border-top:2px solid var(--ink)}
+dl div{display:grid;grid-template-columns:190px 1fr;gap:4px 32px;padding:14px 0;border-bottom:1px solid var(--rule)}
+dt{font-weight:700}
+dd{margin:0}
+.contact p{max-width:34em;margin:0 0 24px}
+footer{padding:28px 0 40px;border-top:1px solid var(--rule);color:var(--mute);font-size:14px}
+.hero h1 span,.hero .lead,.hero .cta{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.hero h1 span:nth-child(2){animation-delay:.12s}
+.hero .lead{animation-delay:.28s}
+.hero .cta{animation-delay:.38s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}.btn:hover{transform:none}}
+@media (max-width:680px){.row,dl div{grid-template-columns:1fr}.hero{padding:48px 0 40px}.facts{gap:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main">
+  <a class="me" href="#top">Abd El-Rahman Rizq</a>
+  <a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav>
+
+<header class="hero" id="top">
+  <h1><span>Abd El-Rahman</span><span>Rizq</span></h1>
+  <p class="lead">Full Stack Engineer who builds the business logic behind ERP, HR and booking systems, with React, Next.js and NestJS.</p>
+  <div class="cta">
+    <a class="btn main" href="mailto:a.rezk453@gmail.com">Email me</a>
+    <a class="btn" href="https://github.com/AbdElRahman-Rizq" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://linkedin.com/in/abdel-rahman-rizq" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="facts">
+    <div><b>3+ years</b><br>building production web apps</div>
+    <div><b>Cairo, Egypt</b><br>Open to remote and hybrid</div>
+    <div><b>Arabic, English</b><br>Native, fluent</div>
+  </div>
+</header>
+
+<section id="work">
+  <h2>Experience</h2>
+  <article class="row">
+    <div class="when">Sep 2025 – Present<br>Giza, Egypt (Hybrid)</div>
+    <div>
+      <h3>Growxcel</h3><p class="role">Full-Stack Developer</p>
+      <ul>
+        <li>Building core modules of a commercial ERP Cost Accounting product sold to multiple companies.</li>
+        <li>Designing backend services and business logic for cost accounting workflows, plus the dashboards teams use to read the results.</li>
+        <li>Turning business requirements from cross-functional teams into production-ready features.</li>
+      </ul>
+      <div class="tags"><span>React.js</span><span>NestJS</span><span>SQL Server</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Jan 2025 – Sep 2025<br>Giza, Egypt (Hybrid)</div>
+    <div>
+      <h3>7P</h3><p class="role">Frontend Developer</p>
+      <ul>
+        <li>Delivered a Learning Management System, admin and analytics dashboards, and a tourism booking system.</li>
+        <li>Built reusable components and a clean UI architecture that kept design consistent across projects.</li>
+      </ul>
+      <div class="tags"><span>React.js</span><span>Next.js</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Mar 2024 – Dec 2024<br>Aachen, Germany (Remote)</div>
+    <div>
+      <h3>Futtech</h3><p class="role">Full-Stack Engineer</p>
+      <ul>
+        <li>Maintained core NestJS backend services and designed and documented new RESTful APIs.</li>
+        <li>Deployed multiple projects to AWS with Jenkins CI/CD pipelines.</li>
+        <li>Ran code reviews and refactored existing code to reduce technical debt.</li>
+      </ul>
+      <div class="tags"><span>NestJS</span><span>AWS</span><span>Jenkins</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Jan 2024 – Jun 2024<br>Egypt (Freelance)</div>
+    <div>
+      <h3>Freelance</h3><p class="role">Full-Stack Engineer</p>
+      <ul>
+        <li>Built a parking system website for the Citadel of Saladin, end to end.</li>
+        <li>Developed a WordPress plugin for a German teacher: virtual meetings, scheduling and notifications.</li>
+      </ul>
+      <div class="tags"><span>React</span><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span><span>WordPress</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Jul 2023 – Nov 2023<br>Egypt</div>
+    <div>
+      <h3>Information Technology Institute (ITI)</h3><p class="role">Full-Stack Developer Intern</p>
+      <ul><li>Completed an intensive MEARN stack program and shipped several team projects.</li></ul>
+    </div>
+  </article>
+</section>
+
+<section id="projects">
+  <h2>Selected projects</h2>
+  <article class="row">
+    <div class="when">Backend</div>
+    <div>
+      <h3>Wrdya, HR Management System</h3>
+      <ul><li>Built the full backend from scratch: employees, attendance, shifts, leaves and payroll through secure REST APIs, following clean architecture.</li></ul>
+      <div class="tags"><span>NestJS</span><span>Prisma</span><span>PostgreSQL</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Frontend</div>
+    <div>
+      <h3>Album Travel, booking app</h3>
+      <ul><li>A responsive travel booking app with an admin dashboard, built for good UX and accessibility.</li></ul>
+      <div class="tags"><span>Next.js</span><span>React</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Frontend</div>
+    <div>
+      <h3>PflegeNetz</h3>
+      <ul><li>Multi-language localization and Framer Motion animations for a diverse user base.</li></ul>
+      <div class="tags"><span>React</span><span>Tailwind CSS</span><span>Framer Motion</span></div>
+    </div>
+  </article>
+  <article class="row">
+    <div class="when">Backend</div>
+    <div>
+      <h3>NFC App</h3>
+      <ul><li>Backend architecture for an NFC-based app, with efficient data handling and secure authentication.</li></ul>
+      <div class="tags"><span>NestJS</span><span>Prisma</span></div>
+    </div>
+  </article>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl>
+    <div><dt>Languages</dt><dd>TypeScript, JavaScript, SQL, HTML, CSS</dd></div>
+    <div><dt>Frontend</dt><dd>React.js, Next.js, Redux Toolkit, Tailwind CSS, Framer Motion, i18n</dd></div>
+    <div><dt>Backend</dt><dd>Node.js, NestJS, Express.js, REST APIs, Authentication, Clean Architecture, SOLID</dd></div>
+    <div><dt>Data</dt><dd>PostgreSQL, SQL Server, MongoDB, Redis, Prisma</dd></div>
+    <div><dt>DevOps</dt><dd>AWS, Docker, Jenkins, Nginx, CI/CD, Git</dd></div>
+    <div><dt>Ways of working</dt><dd>Agile, JIRA, code review, API documentation</dd></div>
+  </dl>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Let's work together</h2>
+  <p>I'm open to full-stack and frontend roles, and to freelance projects. The fastest way to reach me is email.</p>
+  <div class="cta">
+    <a class="btn main" href="mailto:a.rezk453@gmail.com">a.rezk453@gmail.com</a>
+    <button class="btn" id="copy" type="button">Copy email</button>
+    <a class="btn" href="tel:+201145812766">+20 1145 812 766</a>
+  </div>
+</section>
+
+<footer>Abd El-Rahman Rizq, B.Sc. Computer Science &amp; Artificial Intelligence, Benha University, 2021.</footer>
+</div>
+<script>
+(function(){
+  var b=document.getElementById('copy');
+  b.addEventListener('click',function(){
+    var done=function(ok){b.textContent=ok?'Email copied':'Copy failed, select it manually';setTimeout(function(){b.textContent='Copy email'},2000)};
+    try{navigator.clipboard.writeText('a.rezk453@gmail.com').then(function(){done(true)},function(){done(false)})}catch(e){done(false)}
+  });
+})();
+</script>
+</body>
+</html>
